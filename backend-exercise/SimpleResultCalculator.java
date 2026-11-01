@@ -14,9 +14,9 @@ public class SimpleResultCalculator{
         int s3 = sc.nextInt();
 
         int totalMarks = s1 + s2 + s3;
-        int avgMarks = totalMarks/3;
+        double avgMarks = totalMarks/3;
 
-        if(avgMarks >= 40 && totalMarks >= 33){
+        if(avgMarks >= 40 && s1 >= 33 && s2 >= 33 && s3 >= 33){
             System.out.println("Pass");
         } else {
             System.out.println("Fail");
